@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="William Shobane Manthata" />
+    <meta name="description" content="Bootcamp code project" />
+    <meta name="keywords" content="html" />
+    <meta name="view-port" content="width=device-width, initial-scale=0.1" />
+    <!--Styling the structure of the page here(head tag) rather from the elemement to keep the code clear -->
+    <style>
+      body {
+        background-color: #4bc0ba59;
+        margin: 0px;
+        padding: 0px;
+      }
+      /*Styling the hearder*/
+      header nav {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+      }
+      /*styling the navigation links*/
+      nav .img_icon {
+        margin-right: 20px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 2px;
+      }
+      nav .nav_links {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+      }
+      nav .nav_links a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 25px 20px;
+      }
+      nav .nav_links a:last-child {
+        background-color: lightseagreen;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        padding: 25px 20px;
+      }
+      nav .nav_links a:hover {
+        background-color: gray;
+      }
+      nav .nav_links a:active {
+        background-color: lightseagreen;
+      }
+      /*styling the Main*/
+      main .h1_heading{
+        padding-left: 20px;
+      }
+      .h1_heading h1{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      article{
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px 20px 20px;
+      }
+      article section{
+        height: 432px;
+        width: 500px;
+        margin-right: 20px;
+        background-color: rgba(0, 0, 0, 0.089);
+        box-shadow: 2px 2px 1px 1px grey;
+        border-radius: 10px;
+      }
+      /*styling form contect*/
+      form label{
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+      }
+      form input{
+        width: 300px;
+        height: 20px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      form textarea{
+        margin-left: 10px;
+      }
+      form button{
+        margin-top: 5px;
+        margin-left: 10px;
+        background-color: rgba(32, 178, 171, 0.507);
+        border: none;
+        height: 30px;
+        width: 60px;
+        border-radius: 10px;
+      }
+      /*styling the aside tag*/
+      article aside{
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        box-shadow: 2px 2px 1px 1px grey;
+        border-radius: 10px;
+      }
+      article aside a{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: black;
+      }
+      article aside .icon_contact{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      /*styling the footer*/
+      footer{ 
+        background-color: lightseagreen;
+      }
+      /*styling the copy right block*/
+      .copyright{
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+        color: white;
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!--The top hearder navigation bar: images along with links-->
+        <div class="img_icon">
+          <img src="../icons/web.png" alt="web icon" width="50px" height="50" />
+        </div>
+        <div class="nav_links">
+          <a href="../../Index.html">Home</a>
+          <a href="./about_us_asset.html">About Me</a>
+          <a href="./contact_us_asset.html">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--contact us heading-->
+      <div class="h1_heading">
+        <h1>Contact us</h1>
+      </div>
+      <article>
+        <section>
+          <form action="">
+            <br>
+            <label for="name">Name(s)</label><br>
+            <input type="text" name="name"><br>
+            <label for="surname">Surname</label><br>
+            <input type="text" name="surname"><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="example@gmail.com"><br>
+            <label for="email">Cell Phone</label><br>
+            <input type="number" name="email" placeholder="+27......."><br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea><br>
+            <button type="submit" name="submita">Submit</button>
+          </form>
+          
+        </section>
+        <aside>
+          <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/">
+            <img src="../icons/icons8-linkedin-240.png" alt="linkedIn image" width="30px"><span>LinkedIn</span>
+          </a>
+          <a href="https://www.instagram.com/will_manthata/">
+            <img src="../icons/icons8-instagram-512.png" alt="instagram image" width="30px"><span>Instagram</span>
+          </a>
+          <a href="https://web.facebook.com/will.manthata/">
+            <img src="../icons/icons8-facebook-240.png" alt="facebook image" width="30px"><span>Facebook</span>
+          </a>
+          <div class="icon_contact">
+            <img src="../icons/icons8-email-open-96.png" alt="email image" width="30px"><span>smanthata4@gmail.com</span> 
+          </div>
+          <div class="icon_contact">
+            <img src="../icons/icons8-phone-480.png" alt="phone image" width="30px"><span>0796506616</span>
+        </aside>
+      </article>
+    </main>
+    <footer>
+      <!--copyright here-->
+      <div class="copyright">
+        <p>&copy;Copyright 2022 Bootcamp</p>
+      </div>
+    </footer>
+  </body>
+</html>
