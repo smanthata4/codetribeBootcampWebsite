@@ -7,196 +7,125 @@
     <meta name="description" content="Bootcamp code project" />
     <meta name="keywords" content="html" />
     <meta name="view-port" content="width=device-width, initial-scale=0.1" />
-    <!--Styling the structure of the page here(head tag) rather from the elemement to keep the code clear -->
-    <style>
-      body {
-        background-color: #ebe5e5;
-        margin: 0px;
-        padding: 0px;
-      }
-
-      /*Styling the hearder*/
-
-      header nav {
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        background-color: white;
-        width: 100%;
-      }
-      nav .img_icon {
-        margin-right: 20px;
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-bottom: 2px;
-      }
-      nav .nav_links {
-        display: flex;
-        justify-content: end;
-        width: 100%;
-      }
-      nav .nav_links a{
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        padding: 25px 20px;
-      }
-      nav .nav_links a:first-child {
-        background-color: lightseagreen;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        padding: 25px 20px;
-      }
-      nav .nav_links a:hover {
-        background-color: gray;
-      }
-      nav .nav_links a:active {
-        background-color: lightseagreen;
-      }
-
-      /*styling the Main*/
-      /*the article block*/
-      article{
-        width: 100%;
-        display: flex;
-        align-items: center;
-      }
-      article section{
-        display: flex; 
-        justify-content: center; 
-        width: 50%; 
-        height: 300px;
-      }
-      article section .bio_{
-        margin-left: 10px;
-      }
-      article section .bio_ h1{
-        font-family: Georgia, 'Times New Roman', Times, serif; 
-        font-size: xx-large;
-      }
-      article section .bio_ p{
-        width: 400px; 
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      article section .bio_ button{
-        height: 30px; border-radius: px;
-      }
-      article aside{
-        display: flex; 
-        justify-content: center; 
-        width: 50%;
-      }
-      article aside img{
-        margin: 50px 0px 50px; 
-        border-radius: 15px; 
-        box-shadow: 5px 5px 10px 2px gray;
-      }
-      /*styling the footer*/
-      footer{ 
-        background-color: lightseagreen;
-      }
-      /*styling the contact info*/
-      .contacts_info{
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
-      }
-      .contacts_info a{
-        display: flex;
-        text-decoration: none;
-        color: white;
-        align-items: center;
-        margin-right: 20px;
-      }
-      .contacts_info .icon_contact{
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-      }
-      .contacts_info .icon_contact span{
-        color: white;
-      }
-      /*styling the copyright block*/
-      .copyright{
-        width: 100%; 
-        display: flex;
-        justify-content: center; 
-        color: white;
-      }
-    </style>
-    
+    <link rel="stylesheet" href="./assets/css/home.stylesheet.css">
   </head>
-
   <body>
-    <header>
-      <nav>
-        <!--The top hearder navigation bar: images along with links-->
-        <div class="img_icon">
-          <img src="./assets/icons/web.png" alt="web icon" width="50px" height="50" />
-        </div>
-        <div class="nav_links">
-          <a href="Index.html">Home</a>
-          <a href="./assets/pages/about_us_asset.html">About Me</a>
-          <a href="./assets/pages/contact_us_asset.html">Contact Us</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <!--Section inside main about the video-->
-          <video width="100%" height="100%" autoplay loop muted>
-            <source src="./assets/videos/IoT.mp4" type="video/mp4" />
-            <!--In case is not supported by browser-->
-            <source src="#alternative" type="video/oog" />
-            video is no supported by your browser
-          </video>
-      </section>
-      <article id="#about me">
-        <!--Section about bio-->
-        <section>
-            <div class="bio_">
-                <h1>William Manthata</h1>
-                <p>
-                    My name is William Manthata and I am a Junior Web Developer for MLAP. 
-                    I am an accomplished coder and programmer, 
-                    and I enjoy using my skills to contribute to the exciting technological advances that happen every day at MLAB. 
-                    I graduated from the Tshwane University of Technology in 2022 with a Deploma in Software Development. 
-                    While in school, I earned the top student Award for my exemplary academic performance and leadership skills.</p>
-                <button type="button" name="readmore">Read More</button> 
+
+    <!--Header section-->
+    <header cells>
+      <table>
+        <tr>
+          <!--Table data contains imagin icon-->
+          <td>
+            <div id="logo_icon" >
+              <img src="./assets/icons/web.png" alt="web icon" width="50px" height="50" />
             </div>
-          </div>
+            
+          </td>
+          <!--Table data contains nav links-->
+          <td>
+            <nav>
+              <a href="Index.html">Home</a>
+              <a href="./assets/pages/about_us_asset.html">About Me</a>
+              <a href="./assets/pages/contact_us_asset.html">Contact Us</a>
+            </nav>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <!--Main section-->
+    <main width="100%">
+      <table>
+
+        <!--section: Table row contains a video-->
+        <section>
+          <tr>
+            <!--Table data contains a video-->
+            <td colspan="2">
+                <video width="100%" height="100%" autoplay loop muted>
+                  <source src="./assets/videos/IoT.mp4" type="video/mp4" />
+                  <!--In case is not supported by browser-->
+                  <source src="#alternative" type="video/oog" />
+                  video is no supported by your browser
+                </video>
+            </td>
+          </tr>
         </section>
-        <!--Imagine that relates to bio hence aside element used-->
-        <aside>
-          <img src="./assets/images/profile.jpg" alt="profile picture" width="324px" height="400px" > 
-        </aside>
-      </article>
+    
+        <!--article: Table row contains bio and imagine-->
+        <article>
+          <tr>
+            <!--Table data contains bio section-->
+            <td>
+              <section>
+                <!--The align attribute is deprecate,
+                flex boxes was my solution to align content to the center of the table data-->
+                <div class="table_data">
+                  <div class="bio">
+                    <h1>Hi, my name is <span>William Manthata</span></h1>
+                    <h2>I am a <SPan>WEBSITE DEVELOPER</SPan></h2>
+                    <p>
+                        My name is William Manthata and I am a Junior Web Developer for MLAP. 
+                        I am an accomplished coder and programmer, 
+                        and I enjoy using my skills to contribute to the exciting technological advances that happen every day at MLAB. 
+                        I graduated from the Tshwane University of Technology in 2022 with a Deploma in Software Development. 
+                        While in school, I earned the top student Award for my exemplary academic performance and leadership skills.
+                    </p>
+                    <a href="./assets/pages/about_us_asset.html"><button type="button" name="readmore">Read More</button></a> 
+                </div> 
+              </section>  
+            </td>
+            
+            <!--Table data contains aside with imagine-->
+            <td>
+              <aside>
+                <div id="aside_image">
+                  <a href="./assets/pages/about_us_asset.html"><img src="./assets/images/profile.jpg" alt="profile picture" width="374px" height="450px" ></a> 
+                </div>
+              </aside>
+            </td>
+          </tr>
+        </article>
+      </table>
     </main>
+
+    <!--Footer section-->
     <footer>
-      <!--Section about the contact details and media links-->
-      <div class="contacts_info">
-        <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/">
-          <img src="./assets/icons/icons8-linkedin-240.png" alt="linkedIn image" width="20px"><span>LinkedIn</span>
-        </a>
-        <a href="https://www.instagram.com/will_manthata/">
-          <img src="./assets/icons/icons8-instagram-512.png" alt="instagram image" width="20px"><span>Instagram</span>
-        </a>
-        <a href="https://web.facebook.com/will.manthata/">
-          <img src="./assets/icons/icons8-facebook-240.png" alt="facebook image" width="20px"><span>Facebook</span>
-        </a>
-        <div class="icon_contact">
-          <img src="./assets/icons/icons8-email-open-96.png" alt="email image" width="20px"><span>smanthata4@gmail.com</span> 
-        </div>
-        <div class="icon_contact">
-          <img src="./assets/icons/icons8-phone-480.png" alt="email image" width="20px"><span>0796506616</span>
-        </div>
-      </div>
-      <!--Along with the copyright here-->
-      <div class="copyright">
-        <p>&copy;Copyright 2022 Bootcamp</p>
-      </div>
-    </footer>
+      <table>
+        <section>
+          <!--Table row contains contact details and media links-->
+          <tr>
+            <td colspan="2">
+              <div class="contacts_info">
+                <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/" target="blank">
+                  <img src="./assets/icons/icons8-linkedin-240.png" alt="linkedIn image" width="20px"><span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/will_manthata/" target="blank">
+                  <img src="./assets/icons/icons8-instagram-512.png" alt="instagram image" width="20px"><span>Instagram</span>
+                </a>
+                <a href="https://web.facebook.com/will.manthata/" target="blank">
+                  <img src="./assets/icons/icons8-facebook-240.png" alt="facebook image" width="20px"><span>Facebook</span>
+                </a>
+                <div class="icon_contact">
+                  <img src="./assets/icons/icons8-phone-480.png" alt="email image" width="20px"><span>smanthata4@gmail.com</span> 
+                </div>
+                <div class="icon_contact">
+                  <img src="./assets/icons/icons8-email-open-96.png" alt="email image" width="20px"><span>0796506616</span>
+                </div>
+              </div>>  
+            </td>
+          </tr>
+
+          <!--Table row contains copyright-->
+          <tr>
+            <td>
+              <div class="copyright">
+                <p>&copy;Copyright 2022 Bootcamp</p>
+              </div>
+            </td>
+          </tr>
+        </section>
+      </table>
   </body>
 </html>

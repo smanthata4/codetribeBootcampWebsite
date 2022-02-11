@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+body {
+  background-color: #ebe5e5;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*The hearder block*/
+
+header table{
+  background-color: white;
+}
+
+/*For every table to eliminate cell spacing*/
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+/*For every table data to eliminate padding between the content and the border*/
+td{
+  padding: 0px;  
+}
+
+/*navigation section*/
+
+#logo_icon img{
+  margin-left: 5px;  
+}
+nav{
+  display: flex;
+  justify-content: end;
+}
+nav a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 20px 20px;
+}
+#second-child{
+  background-color: lightseagreen;
+}
+nav a:hover{
+  background-color: grey;    
+}
+
+/*About us heading*/
+#top_row{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#heading{
+  text-align: center;
+}
+#heading h1{
+  font-size: xx-large;
+  color: lightseagreen;
+  font-family: 'Courgette', cursive;
+  margin: 0px;
+}
+#heading hr{
+  margin: 0px;
+  background-color: lightseagreen;
+}
+
+/* The article block */
+
+#table_data_left{
+    display: flex;
+    justify-content: end;
+}
+#table_data_right{
+  display: flex;
+  justify-content: start;
+}
+.bio{
+  width: 70%;
+}
+.bio h1{
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: xx-large;
+  margin: 0px;
+}
+.bio h1 span{
+  font-size: large;
+  color: lightseagreen;
+  font-family: 'Courgette', cursive;
+}
+.bio h2{
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: large;
+  margin: 0px;
+}
+.bio h2 span{
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: large;
+  color: lightseagreen;
+}
+.small_text{
+  color: lightseagreen;
+  font-family: 'Courgette', cursive;
+  margin: 0px;
+}
+.bio ul{
+  margin: 0px;
+  padding-left: 13px;
+  color: lightseagreen;
+  font-size: large;
+  margin-bottom: 15px;
+}
+.bio ul span{
+  color: black;
+}
+
+.bio p{
+  width: 400px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bio button{
+  height: 30px; 
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
+}
+#aside_image_right{
+  display: flex;
+  justify-content: start;
+  padding: 50px;
+}
+#aside_image_left{
+  display: flex;
+  justify-content: end;
+  padding: 50px 100px;
+}
+
+#aside_image_right img{
+  border-top: 2px solid lightseagreen;
+  border-right: 2px solid lightseagreen;
+}
+#aside_image_left img{
+  border-bottom: 2px solid lightseagreen;
+  border-left: 2px solid lightseagreen; 
+} 
+
+/*The footer block*/
+
+footer{ 
+  background-color: lightseagreen;
+}
+/*The contact info block*/
+.contacts_info{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.contacts_info a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  margin-right: 20px;
+}
+.contacts_info .icon_contact{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.contacts_info .icon_contact span{
+  color: white;
+}
+
+/*The copyright block*/
+.copyright{
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  color: white;
+}

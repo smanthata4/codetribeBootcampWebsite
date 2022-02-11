@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+body {
+    background-color: #ebe5e5;
+    margin: 0px;
+    padding: 0px;
+  }
+  /*The hearder block*/
+
+  header table{
+    background-color: white;
+  }
+
+/*For every table to eliminate cell spacing*/
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+/*For every table data to eliminate padding between the content and the border*/
+td{
+  padding: 0px;  
+}
+
+/*Navigation section*/
+#logo_icon img{
+  margin-left: 5px;  
+}
+nav{
+  display: flex;
+  justify-content: end;
+}
+nav a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 20px 20px;
+}
+nav a:last-child{
+  background-color: lightseagreen;
+}
+nav a:hover{
+  background-color: grey;    
+}
+
+/*contact us heading*/
+#top_row{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#heading{
+  text-align: center;
+}
+#heading h1{
+  font-size: xx-large;
+  color: lightseagreen;
+  font-family: 'Courgette', cursive;
+  margin: 0px;
+}
+#heading hr{
+  margin: 0px;
+  background-color: lightseagreen;
+}
+
+/*Contact form*/
+.box_section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+#main_table{
+  width: 80%;
+}
+#main_table tr:last-child{
+  background-color: white;
+}
+#aside_image{
+  display: flex;
+  justify-content: center;
+  border-right: 3px solid lightseagreen;
+  border-bottom: 3px solid lightseagreen;
+}
+#form_section{
+  display: flex;
+  justify-content: center;
+}
+form{
+  margin: 0px 10px 0px 10px; 
+}
+form label{
+  font-size: xx-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form input{
+  width: 500px;
+  height: 40px;
+  margin-bottom: 10px;
+  background-color: rgba(138, 224, 220, 0.329);
+  border: none;
+}
+form textarea{
+  width: 500px;
+  margin-bottom: 10px;
+  background-color: rgba(138, 224, 220, 0.329);
+  border: none;
+}
+form button{
+  height: 40px;
+  width: 500px;
+  background-color: lightseagreen;
+  border: none;
+}  
+
+/*The footer block*/
+footer{ 
+  background-color: lightseagreen;
+}
+/*The contact info block*/
+.contacts_info{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.contacts_info a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  margin-right: 20px;
+}
+.contacts_info .icon_contact{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.contacts_info .icon_contact span{
+  color: white;
+}
+
+/*The copyright block*/
+.copyright{
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  color: white;
+}

@@ -8,188 +8,158 @@
     <meta name="keywords" content="html" />
     <meta name="view-port" content="width=device-width, initial-scale=0.1" />
     <!--Styling the structure of the page here(head tag) rather from the elemement to keep the code clear -->
-    <style>
-      body {
-        background-color: #ebe5e5;
-        margin: 0px;
-        padding: 0px;
-      }
-
-      /*Styling the hearder*/
-
-      header nav {
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        background-color: white;
-        width: 100%;
-      }
-      /*styling the navigation links*/
-      nav .img_icon {
-        margin-right: 20px;
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-bottom: 2px;
-      }
-      nav .nav_links {
-        display: flex;
-        justify-content: end;
-        width: 100%;
-      }
-      nav .nav_links a{
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        padding: 25px 20px;
-      }
-      nav .nav_links a.Second-child {
-        background-color: lightseagreen;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-        color: black;
-        padding: 25px 20px;
-      }
-      nav .nav_links a:hover {
-        background-color: gray;
-      }
-      nav .nav_links a:active {
-        background-color: lightseagreen;
-      }
-
-      /*styling the Main*/
-
-      /*the article block*/
-      article{
-        width: 100%;
-        display: flex;
-        align-items: center;
-      }
-      article section{
-        display: flex; 
-        justify-content: center; 
-        width: 50%; 
-        height: 300px;
-      }
-      article section .bio_{
-        margin-left: 10px;
-      }
-      article section .bio_ h1{
-        font-family: Georgia, 'Times New Roman', Times, serif; 
-        font-size: xx-large;
-      }
-      article section .bio_ p{
-        width: 400px; 
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      article section .bio_ button{
-        height: 30px; border-radius: px;
-      }
-      article aside{
-        display: flex; 
-        justify-content: center; 
-        width: 50%;
-      }
-      article aside img{
-        margin: 50px 0px 50px; 
-        border-radius: 15px; 
-        box-shadow: 5px 5px 10px 2px gray;
-      }
-      /*styling the footer*/
-      footer{ 
-        background-color: lightseagreen;
-      }
-      /*styling the contacts info*/
-      .contacts_info{
-        display: flex; 
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
-      }
-      .contacts_info a{
-        display: flex;
-        text-decoration: none;
-        color: white;
-        align-items: center;
-        margin-right: 20px;
-      }
-      .contacts_info .icon_contact{
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-      }
-      .contacts_info .icon_contact span{
-        color: white;
-      }
-      /*styling the copyright block*/
-      .copyright{
-        width: 100%; 
-        display: flex;
-        justify-content: center; 
-        color: white;
-      }
-    </style>
-    
+    <link rel="stylesheet" href="../css/about.stylesheet.css"> 
   </head>
 
   <body>
+    
+    <!--Header section-->
     <header>
-      <nav>
-        <!--The top hearder navigation bar: images along with links-->
-        <div class="img_icon">
-          <img src="../icons/web.png" alt="web icon" width="50px" height="50" />
-        </div>
-        <div class="nav_links">
-          <a href="../../Index.html">Home</a>
-          <a class="Second-child" href="./about_us_asset.html">About Me</a>
-          <a href="./contact_us_asset.html">Contact Us</a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <article id="#about me">
-        <!--Section about bio-->
-        <section>
-            <div class="bio_">
-                <h1>William Manthata</h1>
-                <p>
-                    My name is William Manthata and I am a Junior Web Developer for MLAP. 
-                    I am an accomplished coder and programmer, 
-                    and I enjoy using my skills to contribute to the exciting technological advances that happen every day at MLAB. 
-                    I graduated from the Tshwane University of Technology in 2022 with a Deploma in Software Development. 
-                    While in school, I earned the top student Award for my exemplary academic performance and leadership skills.</p>
-                <button type="button" name="readmore">Read More</button> 
+      <table>
+        <tr>
+          <!--Table data contains imagin icon-->
+          <td>
+            <div id="logo_icon" >
+              <img src="../icons/web.png" alt="web icon" width="50px" height="50" />
             </div>
-          </div>
+            
+          </td>
+          <!--Table data contains nav links-->
+          <td>
+            <nav>
+              <a href="../../Index.html">Home</a>
+              <a href="about_us_asset.html" id="second-child">About Me</a>
+              <a href="contact_us_asset.html">Contact Us</a>
+            </nav>
+          </td>
+        </tr>
+      </table>
+    </header>
+
+    <main>
+      <table>
+        <section>
+          <!--Table row contains top header: "about me"-->
+          <tr>
+            <td colspan="2">
+              <div id="top_row">
+                <div id="heading">
+                  <h1>About me</h1>
+                  <hr width="200px" size="4px">
+                </div>
+              </div>
+            </td>
+          </tr>
         </section>
-        <!--Imagine that relates to bio hence aside element used-->
-        <aside>
-          <img src="../images/profile.jpg" alt="profile picture" width="324px" height="400px" > 
-        </aside>
-      </article>
+        
+        <!--article: Table row contains bio and imagine-->
+        <article>
+
+          <!--first table row containing bio-->
+          <tr>
+            <!--Table data contains bio section-->
+            <td width="50%">
+              <section>
+                <!--The align attribute is deprecate,
+                flex boxes was my solution to align content to the center of the table data-->
+                <div id="table_data_left">
+                  <div class="bio">
+                    <h1>Hi, my name is <span>William Manthata</span></h1>
+                    <h2>I am a <SPan>WEBSITE DEVELOPER</SPan></h2>
+                    <p>
+                        My name is William Manthata and I just joined Bootcamp at MLAP. I am an accomplished coder and programmer, 
+                        and I enjoy using my skills to contribute to the exciting technological advances that happen every day at MLAB. 
+                        I graduated from the Tshwane University of Technology in 2022 with a Deploma in Software Development. 
+                        While in school, I earned the top student Award for my exemplary academic performance and leadership skills.
+                    </p>
+                    <a href="#myresume"><button type="button" name="readmore">My RESUME</button></a> 
+                </div>
+              </section>   
+            </td>
+            
+            <!--Table data contains aside with imagine-->
+            <td>
+              <aside>
+                <div id="aside_image_right">
+                  <img src="../images/flat design1.png" alt="profile picture" width="374px" height="450px" > 
+                </div>
+              </aside>
+            </td> 
+          </tr>
+
+          <!--Second table row contains bio-->
+          <tr>
+            <!--Table data contains aside with imagine-->
+            <td>
+              <aside>
+                <div id="aside_image_left">
+                  <img src="../images/flat desing2.png" alt="profile picture" width="374px" height="450px" > 
+                </div>
+              </aside> 
+            </td>
+            <!--Table data contains bio section-->
+            <td width="50%">
+              <section>  
+                <!--The align attribute is deprecate,
+                flex boxes was my solution to align content to the center of the table data-->
+                <div class="table_data">
+                  <div class="bio">
+                    <h1>Work Experience</h1>
+                    <h2>Worked as <SPan>INFORMATION CENTER ASSISTANT</SPan></h2>
+                    <P><span class="small_text">2020-2021</span></P>
+                    <P><span class="small_text">Task</span></P>
+                    <ul>
+                      <li><span>Assisting information centre to repair printers when they are broken</span></li>
+                      <li><span>Handing print out for students</span></li>
+                      <li><span>Assisting students to access computers</span></li>
+                      <li><span>Not often assisting in library to check out books and sort shelfs</span></li>
+                    </ul>
+                    <button type="button" name="readmore">My Reume</button> 
+                  </div>
+                </div> 
+              </section>
+            </td>
+          </tr>
+        </article>
+      </table>
     </main>
+    
+    <!--Footer section-->
     <footer>
-      <!--Section about the contact details and media links-->
-      <div class="contacts_info">
-        <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/">
-          <img src="../icons/icons8-linkedin-240.png" alt="linkedIn image" width="20px"><span>LinkedIn</span>
-        </a>
-        <a href="https://www.instagram.com/will_manthata/">
-          <img src="../icons/icons8-instagram-512.png" alt="instagram image" width="20px"><span>Instagram</span>
-        </a>
-        <a href="https://web.facebook.com/will.manthata/">
-          <img src="../icons/icons8-facebook-240.png" alt="facebook image" width="20px"><span>Facebook</span>
-        </a>
-        <div class="icon_contact">
-          <img src="../icons/icons8-email-open-96.png" alt="email image" width="20px"><span>smanthata4@gmail.com</span> 
-        </div>
-        <div class="icon_contact">
-          <img src="../icons/icons8-phone-480.png" alt="email image" width="20px"><span>0796506616</span>
-        </div>
-      </div>
-      <!--Along with the copyright here-->
-      <div class="copyright">
-        <p>&copy;Copyright 2022 Bootcamp</p>
-      </div>
-    </footer>
+      <table>
+        <section>
+          <!--Table row contains contact details and media links-->
+          <tr>
+            <td colspan="2">
+              <div class="contacts_info">
+                <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/" target="blank">
+                  <img src="../icons/icons8-linkedin-240.png" alt="linkedIn image" width="20px"><span>LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/will_manthata/" target="blank">
+                  <img src="../icons/icons8-instagram-512.png" alt="instagram image" width="20px"><span>Instagram</span>
+                </a>
+                <a href="https://web.facebook.com/will.manthata/" target="blank">
+                  <img src="../icons/icons8-facebook-240.png" alt="facebook image" width="20px"><span>Facebook</span>
+                </a>
+                <div class="icon_contact">
+                  <img src="../icons/icons8-email-open-96.png" alt="email image" width="20px"><span>smanthata4@gmail.com</span> 
+                </div>
+                <div class="icon_contact">
+                  <img src="../icons/icons8-phone-480.png" alt="email image" width="20px"><span>0796506616</span>
+                </div>
+              </div>>  
+            </td>
+          </tr>
+
+          <!--Table row contains copyright-->
+          <tr>
+            <td>
+              <div class="copyright">
+                <p>&copy;Copyright 2022 Bootcamp</p>
+              </div>
+            </td>
+          </tr>
+        </section>
+      </table>
   </body>
 </html>
