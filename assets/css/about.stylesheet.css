@@ -22,9 +22,8 @@ td{
 }
 
 /*navigation section*/
-
 #logo_icon img{
-  margin-left: 5px;  
+  margin-left: 5px;
 }
 nav{
   display: flex;
@@ -35,9 +34,6 @@ nav a{
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   padding: 20px 20px;
-}
-#second-child{
-  background-color: lightseagreen;
 }
 nav a:hover{
   background-color: grey;    
@@ -104,12 +100,14 @@ nav a:hover{
 .bio ul{
   margin: 0px;
   padding-left: 13px;
-  color: lightseagreen;
   font-size: large;
   margin-bottom: 15px;
+  list-style: none;
 }
-.bio ul span{
-  color: black;
+.bio ul li::before{
+  content: "\2022";
+  color: lightseagreen;
+  margin: 5px 5px 5px 0px;
 }
 
 .bio p{

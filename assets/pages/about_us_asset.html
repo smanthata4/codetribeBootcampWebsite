@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Portfolio</title>
+    <title>codetribeBootcampWebsite</title>
     <meta charset="UTF-8" />
     <meta name="author" content="William Shobane Manthata" />
     <meta name="description" content="Bootcamp code project" />
@@ -9,6 +9,7 @@
     <meta name="view-port" content="width=device-width, initial-scale=0.1" />
     <!--Styling the structure of the page here(head tag) rather from the elemement to keep the code clear -->
     <link rel="stylesheet" href="../css/about.stylesheet.css"> 
+    <script src="../js/about.script.js"></script>
   </head>
 
   <body>
@@ -20,16 +21,16 @@
           <!--Table data contains imagin icon-->
           <td>
             <div id="logo_icon" >
-              <img src="../icons/web.png" alt="web icon" width="50px" height="50" />
+              <img id="icon_nav" width="50px"/>
             </div>
             
           </td>
           <!--Table data contains nav links-->
           <td>
-            <nav>
-              <a href="../../Index.html">Home</a>
-              <a href="about_us_asset.html" id="second-child">About Me</a>
-              <a href="contact_us_asset.html">Contact Us</a>
+            <nav id="nav_a">
+              <a>
+              <a>
+              <a>
             </nav>
           </td>
         </tr>
@@ -44,7 +45,7 @@
             <td colspan="2">
               <div id="top_row">
                 <div id="heading">
-                  <h1>About me</h1>
+                  <h1 id="top_head"></h1>
                   <hr width="200px" size="4px">
                 </div>
               </div>
@@ -64,15 +65,10 @@
                 flex boxes was my solution to align content to the center of the table data-->
                 <div id="table_data_left">
                   <div class="bio">
-                    <h1>Hi, my name is <span>William Manthata</span></h1>
-                    <h2>I am a <SPan>WEBSITE DEVELOPER</SPan></h2>
-                    <p>
-                        My name is William Manthata and I just joined Bootcamp at MLAP. I am an accomplished coder and programmer, 
-                        and I enjoy using my skills to contribute to the exciting technological advances that happen every day at MLAB. 
-                        I graduated from the Tshwane University of Technology in 2022 with a Deploma in Software Development. 
-                        While in school, I earned the top student Award for my exemplary academic performance and leadership skills.
-                    </p>
-                    <a href="#myresume"><button type="button" name="readmore">My Resume</button></a> 
+                    <h1 id="nameAndSurname"></h1>
+                    <h2 id="title"></h2>
+                    <p  id="bio"></p>
+                    <a href="../pages/myResume.html" target="_blank"><button id="button_title" type="button" name="readmore">My Resume</button></a> 
                 </div>
               </section>   
             </td>
@@ -104,17 +100,13 @@
                 flex boxes was my solution to align content to the center of the table data-->
                 <div class="table_data">
                   <div class="bio">
-                    <h1>Work Experience</h1>
-                    <h2>Worked as <SPan>INFORMATION CENTER ASSISTANT</SPan></h2>
-                    <P><span class="small_text">2020-2021</span></P>
-                    <P><span class="small_text">Task</span></P>
-                    <ul>
-                      <li><span>Assisting information centre to repair printers when they are broken</span></li>
-                      <li><span>Handing print out for students</span></li>
-                      <li><span>Assisting students to access computers</span></li>
-                      <li><span>Not often assisting in library to check out books and sort shelfs</span></li>
+                    <h1 id="exp_head"></h1>
+                    <h2 id="position"></h2>
+                    <P id="date"></P>
+                    <P id="type"></P>
+                    <ul id="ul">
                     </ul>
-                    <button type="button" name="readmore">My Reume</button> 
+                    <a href="../pages/myResume.html" target="_blank"><button id="button_title" type="button" name="readmore">My Resume</button></a> 
                   </div>
                 </div> 
               </section>
@@ -132,20 +124,20 @@
           <tr>
             <td colspan="2">
               <div class="contacts_info">
-                <a href="https://www.linkedin.com/in/shobane-manthata-80937521a/" target="blank">
-                  <img src="../icons/icons8-linkedin-240.png" alt="linkedIn image" width="20px"><span>LinkedIn</span>
+                <a class="a_ref">
+                  <img class="icon" width="20px"><span class="nameSpan"></span>
                 </a>
-                <a href="https://www.instagram.com/will_manthata/" target="blank">
-                  <img src="../icons/icons8-instagram-512.png" alt="instagram image" width="20px"><span>Instagram</span>
+                <a class="a_ref">
+                  <img class="icon" width="20px"><span class="nameSpan"></span>
                 </a>
-                <a href="https://web.facebook.com/will.manthata/" target="blank">
-                  <img src="../icons/icons8-facebook-240.png" alt="facebook image" width="20px"><span>Facebook</span>
+                <a class="a_ref">
+                  <img class="icon" width="20px"><span class="nameSpan"></span>
                 </a>
                 <div class="icon_contact">
-                  <img src="../icons/icons8-email-open-96.png" alt="email image" width="20px"><span>smanthata4@gmail.com</span> 
+                  <img class="icon" width="20px"><span class="nameSpan"></span> 
                 </div>
                 <div class="icon_contact">
-                  <img src="../icons/icons8-phone-480.png" alt="email image" width="20px"><span>0796506616</span>
+                  <img class="icon" width="20px"><span class="nameSpan"></span>
                 </div>
               </div>>  
             </td>
@@ -155,7 +147,7 @@
           <tr>
             <td>
               <div class="copyright">
-                <p>&copy;Copyright 2022 Bootcamp</p>
+                <p id="copyright"></p>
               </div>
             </td>
           </tr>
